@@ -2,16 +2,15 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import {
     About,
-    Contact,
     Experience,
     Feedbacks,
     Hero,
     Navbar,
     Tech,
     Works,
-    StarsCanvas,
     Footer,
 } from './components';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App = () => {
     return (
@@ -27,11 +26,13 @@ const App = () => {
                 <Tech />
                 <Works />
                 <Feedbacks />
-                <div className="relative z-0">
+                { /*<div className="relative z-0">
                     <Contact />
                     <StarsCanvas />
-                </div>
+                </div> */
+                }
                 <Footer />
+                <SpeedInsights />
             </div>
         </BrowserRouter>
     );
